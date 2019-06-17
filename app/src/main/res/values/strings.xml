@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">siKLUS Mobile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- About tab -->
+    <string name="about_developers_label">Main developers</string>
+    <string name="about_translator_label">Translator</string>
+    <string name="changelog">Changelog</string>
+    <string name="translator"></string>
+    <string name="about_version_label">Version</string>
+    <string name="about_source_label">Source code</string>
+    <string name="about_libraries_label">Used libraries</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_geometry">Geometry</string>
+    <string name="nav_about">About</string>
+    <string name="nav_reward">Material Design </string>
+    <string name="nav_bank">Nearest Bank</string>
+    <string name="nav_tips">Recycler Tips</string>
+
+
+    <string name="details">Details</string>
+    <string name="version_app">1.0.0</string>
+    <string name="layout">Layout</string>
+    <string name="deskripsi">A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over a hundred species and thousands of cultivars. They form a group of plants that can be erect shrubs.</string>
+
+    <string name="aboutme">UX / UI Mobile Application\nFront-End Android Developer</string>
+
+    <string name="error_form_login">Username / Password masih kosong</string>
+    <string name="error_koneksi">Cek kembali koneksi internet Anda</string>
+
+    <string name="skip_login">Anda akan menggunakan aplikasi siBangun Mobile tanpa Akun</string>
+    <string name="logout">Akun anda akan keluar dari Aplikasi?</string>
+
+    <string name="bt_positive">Lanjutkan</string>
+    <string name="bt_ok">Ok</string>
+    <string name="bt_negative">Batalkan</string>
+    <string name="bt_login">S I G N I N</string>
+    <string name="bt_logout">Keluar</string>
+    <string name="bt_skip_login">Lanjutkan Tanpa Akun</string>
+</resources>

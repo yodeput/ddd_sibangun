@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_akun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="6dp"
+            android:src="@drawable/avab"
+            app:civ_border_color="@color/blue_grey_800"
+            app:civ_border_width="2dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama USERNAME"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/monserat" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_lastupdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terakhir Update 09 April 2019 12:00:00"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/monserat" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_mlarge">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="#000000"
+                app:mrl_rippleDimension="10dp"
+                app:mrl_rippleDuration="350"
+                app:mrl_rippleFadeDuration="75"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleRoundedCorners="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                    <Button
+                        android:id="@+id/but_login"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_mlarge"
+                        android:background="@color/bg_tran"
+                        android:fontFamily="@font/monserat"
+                        android:text="Masuk Akun"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="#000000"
+                    app:mrl_rippleDimension="10dp"
+                    app:mrl_rippleDuration="350"
+                    app:mrl_rippleFadeDuration="75"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_perencanaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/monserat"
+                            android:text="1. Perencanaan"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-40dp"
+                            android:layout_marginBottom="-70dp"
+                            app:srcCompat="@drawable/ic_perencanaan" />
+
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="#000000"
+                    app:mrl_rippleDimension="10dp"
+                    app:mrl_rippleDuration="350"
+                    app:mrl_rippleFadeDuration="75"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_penganggaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/monserat"
+                            android:text="2. Penganggaran"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-40dp"
+                            android:layout_marginBottom="-70dp"
+                            app:srcCompat="@drawable/ic_penganggaran" />
+
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="#000000"
+                    app:mrl_rippleDimension="10dp"
+                    app:mrl_rippleDuration="350"
+                    app:mrl_rippleFadeDuration="75"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_monitoring"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/monserat"
+                            android:text="3. Monitoring"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-40dp"
+                            android:layout_marginBottom="-70dp"
+                            app:srcCompat="@drawable/ic_monitoring" />
+
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="#000000"
+                    app:mrl_rippleDimension="10dp"
+                    app:mrl_rippleDuration="350"
+                    app:mrl_rippleFadeDuration="75"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_pelaporan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/monserat"
+                            android:text="4. Pelaporan"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-40dp"
+                            android:layout_marginBottom="-70dp"
+                            app:srcCompat="@drawable/ic_pelaporan" />
+
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
